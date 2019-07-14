@@ -10,6 +10,10 @@ namespace FactoryMethod
     {
         static void Main(string[] args)
         {
+            Creator  factory = new ConcreteCreator();
+            IProduct product = factory.FactoryMethod("B");
+            product.Print();
+            Console.ReadKey();
         }
     }
 }
